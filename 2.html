@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>더킹</title> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function nightDayHandler(self) {var target = document.querySelector('body');
+        if (self.value === 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            self.value = 'day';
+
+            var a_list = document.querySelectorAll('a');
+            var i = 0;
+            while(i < a_list.length) {
+                a_list[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        }   else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            self.value = 'night';
+
+            var a_list = document.querySelectorAll('a');
+            var i = 0;
+            while(i < a_list.length) {
+                a_list[i].style.color = 'blue';
+                i = i + 1;
+            }
+        }
+    }
+    </script>
+</head>    
+<body>
+    <h1><a href="index.html">더킹 스테이크&파스타</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
+        
+<div id="grid">
+    <ol>
+        <li><a href="1.html">STAKE</a></li>    
+        <li><a href="2.html">PASTA</a></li>
+        <li><a href="3.html">PIZZA</a></li>
+    </ol>
+    <div id="article">
+    <h2>STAKE</h2>
+    <p><a href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%8A%A4%ED%83%80"
+        target="_blank" title=스테이크-위키백과,백과사전 id="menu">파스타</a>
+        (steak)는 일반적으로 근섬유의 방향을 따라 자른 쇠고기 육류조각 또는 생선 등뼈를 따라 자른 고기 덩어리를 말한다.
+    </p>
+    </div>
+</div>
+</body>
+</html>

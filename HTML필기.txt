@@ -1,0 +1,68 @@
+중복의 제거.
+속성과 선택자를 많이 알면 그것들을 조합해서 여러가지를 만들 수 있다.
+
+화면 전체를 쓰는 tag : block level element
+자신의 크기만을 쓰는 tag : inline element
+
+<style>
+hi{
+   border-width:0px;
+   border-color:red;
+   border-style: solid;
+   display:inline; 바꿀수 있다.
+   width:100px;
+   pading:20px; 테두리와 컨텐츠 사이의 간격
+   margin:20px; 테두리와 테두리 사이의 간격
+   
+마우스오른쪽클릭 검사를 통해서 왜 공간이 비는지등을 알아 볼 수 있다.
+   
+}
+---- grid ----
+무색무취와 같은 태그
+<div> 아무런 의미가 없고 Design의 의미만 있다.
+<span>  inline판 div
+grid-template-columns: 1fr 1fr; 화면전체를 fr이라고하면 각자의 숫자만큼 고정으로 차지하게 된다.
+
+div로 묶어주고 div를 묶은것끼리 또 div로 묶어준다.
+
+
+-----반응형 web-----
+화면의 크기에 따라서 웹의 element들이 반응해서 적용된다.
+
+mediaquery @media(조건){}
+1.화면의 크기를 알아야한다. (크기를 조절하면 우측상단에 뜬다.)
+2.스크린의 크기가 얼마 이상이면
+
+@media(max-width:800px;) {
+	#grid{
+		display:block
+	}
+
+------ 코드 재활용 -----
+link tag 의 좋은점 
+link내용의 css 파일만 바꾸면 모두다 바꿀 수 있다.
+
+HTML아 여기 링크에있는 CSS파일을 사용해.
+
+cashing CSS 파일을 만들어서 처음 웹페이지르 열면 나의 컴퓨터에 저장을 하게되고
+그로인해 다음번 접속을 할때 인터넷을 통해서 다운 받는 것이 아니라 내컴퓨터에 저장되어 있는
+CSS파일을 불러온다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
